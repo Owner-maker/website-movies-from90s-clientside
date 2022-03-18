@@ -1,0 +1,498 @@
+/* Smartphones (вертикальная) ----------- max-width: 320px*/
+
+.menu [type="checkbox"],
+label.menu__subtoggle{
+    display: none;
+}
+
+
+.menu__toggle{
+    position: relative;
+    background-color: rgb(105, 83, 83);
+    display: none;
+    padding: 10px 18px 10px 18px;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: seashell;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .body{
+       display: block;
+   }
+
+    /* логотип */
+
+    .logo{
+        height: 120px;
+    }
+
+    .sign {
+        font-size: 2em;
+      }
+    
+/* поисковая строка с кнопкой*/
+
+    .menu-search{
+        top:0;
+        position: relative;
+        
+        flex-direction: column-reverse;
+        left:0; 
+        margin-left:0;
+    }
+
+    .menu,
+    .menu__search{
+        padding: 5px;
+    } 
+
+    .menu__search-field{
+        width: 100%;
+        height: 35px;
+    }
+
+    .menu__search-submit{
+        width: 35px;
+    }
+
+
+    /* меню */
+    
+    .menu{
+        overflow: hidden;
+    }
+
+    .menu__block1-link,
+    .menu__block2-link{ 
+        background: rgb(16,14,51);
+        background: linear-gradient(90deg, rgba(16,14,51,1) 27%, rgba(137,62,85,1) 96%); 
+        font-size: 17px;
+        color: seashell;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+
+    .menu__block1,
+    .menu__block2{
+        display: none;
+        
+    }
+
+    .menu__block1-elem{
+        width: 100%;
+    }
+
+    label.menu__toggle{
+        display: block;
+    }
+
+    input.menu__toggle:checked + label.menu__toggle{
+        background: rgb(60,58,89);
+        background: linear-gradient(90deg, rgba(60,58,89,1) 24%, rgba(137,62,85,1) 96%);
+    }
+
+    input.menu__toggle:checked ~ .menu__block1,
+    input.menu__subtoggle:checked ~ .menu__block2{
+        display: block;
+        transition: top 1s ease-out 0.5s;
+
+        
+        
+        position: relative;
+    }
+
+    label.menu__subtoggle{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+
+    input.menu__subtoggle:checked ~ .menu__block2-link{
+        background: rgb(16,14,51);
+        background: linear-gradient(270deg, rgba(16,14,51,1) 27%, rgba(137,62,85,1) 96%);
+    }
+
+    label.menu__subtoggle .fa:before{
+        content: "\f0d7";
+        color: seashell;
+    }
+
+    label.menu__subtoggle .fa{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    input.menu__subtoggle:checked ~ label.menu__subtoggle .fa::before{
+        content: "\f0d8";
+    }
+
+
+    /* ------------------------------------------------ */
+
+    /* основной блок с фильмами */
+    .mainBlock{
+        margin-left: 2.5%;
+        width: 95%;
+        margin-bottom: 0px;
+    }
+
+    /* Названия разделов */
+
+    .block1__title1,
+    .block2__button-title{
+        font-size: 25px;
+    }
+
+    .block1__title2{
+        margin-top: 1.5%;
+        font-size: 17px;
+    }
+
+    /* кнопка с вопросами */
+
+    .block2__button{
+        margin-top: 30px;
+    }
+
+    .block2__button{
+        width: 110px;
+        height: 30px;
+    }
+
+    .hiddenQs{
+        width: 260px;
+    }
+
+    .hidden__form-q1{
+        font-size: 15px;
+    }
+    
+
+
+    /* параметры маленьких картинок для фильмов */
+
+    .block-1__field__img{
+        width: 75px;
+        height: 115px;
+        margin-bottom: 15px;
+    }
+
+    .hidden-img{
+        opacity: 0;
+    }
+    
+    
+    /* подвал */
+    
+    .footer{
+        position: relative;
+    }
+    
+    .footer__block{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__block-img{
+        width: 40px;
+    }
+}
+
+
+
+
+/* -----------------------------------------------------------
+
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+
+----------------------------------------------------------- */
+
+
+
+
+
+
+/* Smartphones (горизонтальная) ----------- */
+@media only screen and (min-width : 321px) and (max-width : 480px){
+    
+    /* логотип */
+
+    .body{
+        display: block;
+    }
+
+    .logo{
+        height: 120px;
+    }
+
+    .sign {
+        font-size: 3em;
+      }
+    
+
+    /* поисковая строка с кнопкой*/
+
+    .menu-search{
+        top:0;
+        position: relative;
+        flex-direction: column-reverse;
+        left:0; 
+        margin-left:0;
+    }
+
+    .menu,
+    .menu__search{
+        padding: 5px;
+    } 
+
+    .menu__search-field{
+        width: 100%;
+        height: 35px;
+    }
+
+    .menu__search-submit{
+        width: 35px;
+    }
+
+
+    /* меню */
+    
+    .menu{
+        overflow: hidden;
+    }
+
+    .menu__block1-link,
+    .menu__block2-link{ 
+        background: rgb(16,14,51);
+        background: linear-gradient(90deg, rgba(16,14,51,1) 27%, rgba(137,62,85,1) 96%); 
+        font-size: 17px;
+        color: seashell;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .menu__block1-elem{
+        width: 100%;
+    }
+
+    .menu__block1,
+    .menu__block2{
+        display: none;
+        
+    }
+
+    label.menu__toggle{
+        display: block;
+    }
+
+    input.menu__toggle:checked + label.menu__toggle{
+        background: rgb(60,58,89);
+        background: linear-gradient(90deg, rgba(60,58,89,1) 24%, rgba(137,62,85,1) 96%);
+    }
+
+    input.menu__toggle:checked ~ .menu__block1,
+    input.menu__subtoggle:checked ~ .menu__block2{
+        display: block;
+        transition: top 1s ease-out 0.5s;
+
+        
+        
+        position: relative;
+    }
+
+    label.menu__subtoggle{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+
+    input.menu__subtoggle:checked ~ .menu__block2-link{
+        background: rgb(16,14,51);
+        background: linear-gradient(270deg, rgba(16,14,51,1) 27%, rgba(137,62,85,1) 96%);
+    }
+
+    label.menu__subtoggle .fa:before{
+        content: "\f0d7";
+        color: seashell;
+    }
+
+    label.menu__subtoggle .fa{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    input.menu__subtoggle:checked ~ label.menu__subtoggle .fa::before{
+        content: "\f0d8";
+    }
+
+    /* ---------------------------------------- */
+
+    /* описание заголовков*/
+
+    .block1__title1,
+    .block2__button-title{
+        font-size: 25px;
+    }
+
+    .block1__title2{
+        font-size: 20px;
+    }
+
+    /* кнопка с вопросами */
+
+    .block2__button{
+        margin-top: 30px;
+    }
+
+    .block2__button{
+        width: 110px;
+        height: 30px;
+    }
+
+    .hiddenQs{
+        width: 260px;
+    }
+
+    .hidden__form-q1{
+        font-size: 15px;
+    }
+
+    
+
+
+    /* основной блок */
+
+    .mainBlock{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    /* параметры маленьких картинок для фильмов */
+
+    .block-1__field__img{
+        width: 88px;
+        height: 135px;
+        margin-bottom: 15px;
+    }
+
+    .hidden-img{
+        opacity: 0;
+    }
+    
+    /* подвал */
+    .footer{
+        position: relative;
+    }
+    
+    .footer__block{
+        width: 100%;
+    }
+
+    .footer__block-img{
+        width: 40px;
+    }
+
+}
+
+
+
+/* -----------------------------------------------------------
+
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+
+----------------------------------------------------------- */
+
+/* iPads (вертикальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .menu-search{
+        margin-left:-350px;
+    }
+
+    .menu__block1-elem{
+        width: 120px;
+    }
+
+    .menu__block1-link,
+    .menu__block2-link{ 
+        font-size: 14px;
+    }
+
+    .menu__search-field{
+        font-size: 17px;
+    }
+
+    .menu__search-submit{
+        width: 35.5px;
+    }
+
+    #f{
+        pointer-events: none;
+    }
+
+    .mainBlock{
+        width: 698px;
+    }
+
+    .menu__search-field{
+        width: 168px
+    }
+
+    /* параметры маленьких картинок для фильмов */
+
+    .block-1__field__img{
+        width: 112px;
+        height: 172px;
+        margin-bottom: 15px;
+    }
+    
+    .hidden-img{
+        opacity: 0;
+    }    
+}
+
+
+/* -----------------------------------------------------------
+
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+
+----------------------------------------------------------- */
+
+
+
+/* iPads (горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #f{
+        pointer-events: none;
+    }
+
+    .hidden-img{
+        opacity: 0;
+    }
+    
+}

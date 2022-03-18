@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleNeon.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap">
+    <link rel="stylesheet" href="../css/pattern.css">
+    <link rel="stylesheet" href="../css/selectionStyle.css">
+    <link rel="stylesheet" href="../css/mediaSelection.css">
+
+    <title>Selection</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="logo">
+            <div class="sign">
+                <span class="sign-fast-flicker">Mov </span> ies<pre> </pre> <span class="sign-flicker">from </span><sup>90s</sup>
+            </div>
+        </div>
+            <div class="menu-search">
+                <nav class="menu">
+                    <input type="checkbox" name="toggle" id="menu" class="menu__toggle">
+                    <label for="menu" class="menu__toggle"><i class="fa fa-bars"></i>Меню</label>
+                    <ul class="menu__block1">
+                        <li class="menu__block1-elem"><a href="../html/index.html" class="menu__block1-link"><i class="fa fa-home"></i>Главная</a></li>
+                        <li class="menu__block1-elem">
+                            <input type="checkbox" name="toggle" class="menu__subtoggle" id="sub_m1">
+                            <a href=filmsPage.html class="menu__block1-link" id="f"><i class="fa fa-film"></i>Фильмы</a>
+                            <label for="sub_m1" class="menu__subtoggle"><i class="fa"></i></label>
+                            <ul class="menu__block2">
+                                <li class="menu__block2-elem"><a href="filmsPage.html#actionmovie" class="menu__block2-link">Боевики</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#drama" class="menu__block2-link">Драмы</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#comedy" class="menu__block2-link">Комедии</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#fantastics" class="menu__block2-link">Фантастика</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#thriller" class="menu__block2-link">Триллеры</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#horror" class="menu__block2-link">Ужасы</a></li>
+                                <li class="menu__block2-elem"><a href="" class="menu__block2-link">Добавленные</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__block1-elem"><a href="selection.html" class="menu__block1-link"><i class="fa fa-cogs"></i>Подборка</a></li>
+                        <li class="menu__block1-elem"><a href="directors.html" class="menu__block1-link" id="d"><i class="fa fa-users"></i>Режиссеры</a></li>
+                    </ul>
+                </nav>
+                <form class="menu__search">
+                    <input type="text" class="menu__search-field" placeholder="Поиск" id="sField">
+                    <button type="submit" class="menu__search-submit" id="sButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+    </header>
+
+    <div class="mainBlock">
+        <div class="block1">
+            <p class="block1__title1">Мы можем подобрать фильмы для Вас</p>
+            <p class="block1__title2">Это просто, ответьте на несколько вопросов, представленных ниже: </p>
+        </div>
+
+        <div class="block2">
+
+            <div class="block2__button">
+                <p class="block2__button-title">Вопросы</p>
+
+                <div class="hiddenQs">
+                    <form action="" id="test" class="hidden__form">
+                        <fieldset>
+                            <div class="hidden__form__block1">
+                                <div class="block1__subblock1">
+                                    <legend class="hidden__form-q1">Какое кино предпочитаете?</legend>
+                                </div>
+                                <div class="block1__subblock2">
+                                    <label  class="block1__subblock2-answer">
+                                        <input type="radio" name="q1" value="Зарубежное" checked>
+                                        <p class="hidden__form-answer">Зарубежное</p>
+                                    </label>
+                                    <label  class="block1__subblock2-answer">
+                                        <input type="radio" name="q1" value="Россия">
+                                        <p class="hidden__form-answer">Отечественное</p>
+                                    </label>
+                                </div>
+                            </div>
+                            
+
+                            <div class="hidden__form__block1">
+                                <div class="block1__subblock1">
+                                    <legend class="hidden__form-q1">Длительность фильма:</legend>
+                                </div>
+                                <div class="block1__subblock2">
+                                    <label for="" class="block1__subblock2-answer">
+                                        <input type="radio" name="q2" value="болееДвух" checked>
+                                        <p class="hidden__form-answer">более 2-х часов</p>
+                                    </label>
+                                    <label for="" class="block1__subblock2-answer">
+                                        <input type="radio" name="q2" value="менееДвух">
+                                        <p class="hidden__form-answer">менее 2-х часов</p>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="hidden__form__block2">
+                                <div class="block1__subblock1">
+                                    <legend class="hidden__form-q1">Какие жанры Ваши любимые?</legend>
+                                </div>
+                                <div class="block3">
+                                    <div class="block3__subblock2">
+                                        <label for="" class="block1__subblock2-answer">
+                                            <input type="checkbox" name="q3" value="Боевики" checked>
+                                            <p class="hidden__form-answer">Боевики</p>
+                                        </label>
+                                        <label for="" class="block1__subblock2-answer">
+                                            <input type="checkbox" name="q3" value="Комедии">
+                                            <p class="hidden__form-answer">Комедии</p>
+                                        </label>
+                                        <label for="" class="block1__subblock2-answer">
+                                            <input type="checkbox" name="q3" value="Триллеры">
+                                            <p class="hidden__form-answer">Триллеры</p>
+                                        </label>
+                                        
+                                    </div>
+    
+                                    <div class="block3__subblock2">
+                                        <label for="" class="block1__subblock2-answer">
+                                            <input type="checkbox" name="q3" value="Драмы">
+                                            <p class="hidden__form-answer">Драмы</p>
+                                        </label>
+                                        <label for="" class="block1__subblock2-answer">
+                                            <input type="checkbox" name="q3" value="Фантастика">
+                                            <p class="hidden__form-answer">Фантастика</p>
+                                        </label>
+                                        <label for="" class="block1__subblock2-answer">
+                                            <input type="checkbox" name="q3" value="Ужасы">
+                                            <p class="hidden__form-answer">Ужасы</p>
+                                        </label>
+                                    </div>
+    
+                                </div>
+                                
+
+                            </div>
+
+                        </fieldset>
+                        <button type="submit" class="hidden__form-submit">Подобрать</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="blockFilms" id="selection">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer__block">
+            <div class="footer__block__elem1">
+                <p class="footer__block-text">Copyright</p>
+                <span class="footer__block-symbol">&#169;</span>
+                <p class="footer__block-text">2021</p>
+            </div>
+            <div class="footer__block__elem2">
+                <div>
+                    <a href="" target="_blank"><img src="../images/facebook.png" class="footer__block-img" alt="Facebook logo" title="My facebook"></a>
+                </div>
+                <div>
+                    <a href="" target="_blank"><img src="../images/twitter.png" class="footer__block-img" alt="Twitter logo" title="My twitter"></a>
+                </div>
+                <div>
+                    <a href="" target="_blank"><img src="../images/instagram.png" class="footer__block-img" alt="Instagram logo" title="My Instagram"></a>
+                </div>
+                <div>
+                    <a href="" target="_blank"><img src="../images/vk.png" class="footer__block-img" alt="VK logo" title="My VK"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="../JS/films.js"></script>
+    <script src="../JS/selection.js"></script>
+    <script src="../JS/menuFixed.js "></script>
+    <script src="../JS/searchInput.js"></script>
+    <script src="../JS/goSingleFilmPage.js"></script>
+</body>
+</html>

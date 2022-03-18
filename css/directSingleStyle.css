@@ -1,0 +1,150 @@
+.body{
+    align-items: center;
+}
+
+.mainBlock{
+    min-height: 242px;
+    padding-bottom: 40px;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.082);
+    width: 765px;
+    position: relative;
+    margin-top: 50px;
+    flex-direction: column;
+    margin-bottom: 180px;
+
+}
+
+/* --------------------------------- */
+
+.block{
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.block2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block1-img{
+    width: 190px;
+    display: block;
+    box-shadow: 5px 5px 13px 5px #000000d2;
+}
+
+.title{
+    margin-left: 5%;
+    font-size: 45px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.title p{
+    line-height: 37px;
+}
+
+.discr{
+    margin-top: 13px;
+    margin-left: 5%;
+    font-size: 17px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.about{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 5%;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about2{
+    display: none;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 2.5%;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* раздел для фильмов режиссера */
+
+.block__films-title{
+    width: 190px;
+    font-size: 24px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.block__films{
+    margin-top: 45px;
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.block__films__elems{
+    padding-left: 4%;
+    width: 70%;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* ---------------------------------------------------- */
+
+
+/* параметры маленьких картинок для фильмов */
+
+.block-1__field__img{
+    width: 125px;
+    height: 192px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px 13px 2.5px #000000d2;
+    transition: 0.2s all ease-in-out;
+}
+
+
+
+
+/* параметры для скрытого описания с данными фильма */
+
+.hidden{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 24, 24, 0.822);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hidden-img{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /* margin-bottom: 5px; */
+    margin-left: 5px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+.hidden-img:last-child{
+    margin-bottom: 15px;
+}
+
+
+.block-1__field__img:hover > .hidden{
+    display: flex; 
+}
+
+
+/* ------------------------------------------------------- */

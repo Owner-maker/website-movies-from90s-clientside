@@ -1,0 +1,126 @@
+.body{
+    align-items: center;    /* проблемная штука */
+}
+
+.mainBlock{
+    min-height: 242px;
+    padding-bottom: 40px;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.082);
+    width: 765px;
+    position: relative;
+    margin-top: 50px;
+    flex-direction: column;
+    margin-bottom: 180px;
+
+}
+
+.block1{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 95%;
+    
+}
+
+.block1__title1{
+    color: rgb(253, 245, 234);
+    font-family: Cuprum, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.blockFilms{
+    
+    margin-top: 20px;
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+/* параметры маленьких картинок для фильмов */
+
+.block-1__field__img{
+    width: 125px;
+    height: 192px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px 13px 2.5px #000000d2;
+    transition: 0.2s all ease-in-out;
+}
+
+
+/* параметры для скрытого описания с данными фильма */
+
+.hidden{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 24, 24, 0.822);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hidden-img{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /* margin-bottom: 5px; */
+    margin-left: 5px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+.hidden-img:last-child{
+    margin-bottom: 15px;
+}
+
+/* .block-1__field__img:hover{
+    box-shadow: 3px 3px 16px 3px #702f2fa2;
+    transition: 0.5s all ease-in-out;
+} */
+
+.block-1__field__img:hover > .hidden{
+    display: flex; 
+}
+
+
+/* ------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* параметры для описания загаловка найденных имен и самих имен */
+
+.blockNames{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.blockNames-title{
+    color: rgb(253, 245, 234);
+    font-family: Cuprum, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 33px;
+    margin-bottom: 14px;
+}
+
+.blockNames__elem{
+    margin-bottom: 13px;
+}
+
+.blockNames-name{
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(253, 245, 234);
+    font-family: Cuprum, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+.blockNames-name:hover{
+    /* font-weight: 600; */
+    color: rgb(175, 47, 47);
+    transition: 0.2s all ease-in-out;
+}

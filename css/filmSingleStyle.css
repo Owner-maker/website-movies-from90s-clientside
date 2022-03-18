@@ -1,0 +1,107 @@
+.body{
+    align-items: center;
+}
+
+.mainBlock{
+    min-height: 242px;
+    padding-bottom: 40px;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.082);
+    width: 765px;
+    position: relative;
+    margin-top: 50px;
+    flex-direction: column;
+    margin-bottom: 180px;
+
+}
+
+
+.mainBlock__img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+img{
+    width: 100%;
+    display:block;
+}
+
+.title{
+    margin-top: 60px;
+    margin-left: 5%;
+    font-size: 40px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+.discr,
+.discr__direct-block,
+.discr__acters-block{
+    margin-top: 10px;
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.discr-link,
+.discr__name-link{
+    color: rgb(192, 221, 247);
+}
+
+.discr__name-link{
+    text-decoration: underline;
+}
+
+.discr-link:hover{
+    font-weight: 800;
+    color: rgb(196, 28, 28);
+    transition: 0.2s all ease-in-out;
+}
+
+.discr__name-link:hover{
+    cursor: pointer;
+    font-weight: 800;
+    color: rgb(196, 28, 28);
+    transition: 0.2s all ease-in-out;
+}
+
+.about{
+    font-size: 17px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.discr:last-child{
+    margin-top: 45px;
+}
+
+.discr:first-child{
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.discr-span{
+    color: rgb(192, 221, 247);
+    font-size: 21px;
+}
+
+.discr__direct-block{
+    display: flex;
+}
+
+.discr__acters-block{
+    display: flex;
+    width: 65%;
+}
+
+.discr__acters{
+    margin-right: 20px;
+}
+
+.discr__acters2{
+    margin-right: 33.5px;
+}

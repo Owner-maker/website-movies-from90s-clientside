@@ -1,0 +1,222 @@
+.body{
+    align-items: center;    /* проблемная штука */
+}
+
+.mainBlock{
+    min-height: 215px;
+    padding-bottom: 70px;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.082);
+    width: 765px;
+    position: relative;
+    margin-top: 50px;
+    flex-direction: column;
+    margin-bottom: 180px;
+
+}
+
+.block1{
+    width: 89%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-1__main-title{
+    margin-bottom: 7%;
+    margin-block-start: 5%;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #ffffff;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+/* кнопка с сортировкой */
+
+.sort{
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    align-items: center;
+}
+
+.sort__elems{
+    display: flex;
+    align-items: center;
+}
+
+.sort:hover{
+    background-color: rgba(104, 66, 66, 0.849);
+    transition: 0.15s all ease-in-out;
+}
+
+
+.sort:hover  .hidden{
+    display: flex;
+}
+
+
+.sort-text{
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.sort .fa{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.sort__elem1,
+.sort__elem2{
+    margin-left: 8px;
+}
+
+.sort__elem2{
+    margin-right: 8px;
+}
+
+/* кнопка подтверждения */
+
+.sort__form__block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sort__form-button{
+    box-shadow: 0.25px 0.25px 4px 0.25px #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sort__form-button:hover{
+    color: #ffffff;
+    background-color: rgb(139, 4, 4);
+    box-shadow: 0.25px 0.25px 4px 0.25px  rgb(139, 4, 4);
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+/* ---------------------------------------------------- */
+
+.hidden{
+    display: none;
+    background-color: rgb(104, 66, 66);
+    padding-left: 6px;
+    border-radius: 7px;
+    position: absolute;
+    width: 125.5px;
+    margin-top: 1px;
+    flex-direction: column;
+}
+
+.hidden__block1{
+    margin-top: 7px;
+}
+
+.block1__elem{
+    display: flex;
+    align-items: center;
+}
+
+.block1__elem-text{
+    padding-left: 6px;
+    font-size: 17px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+fieldset{
+    border: 0;
+}
+
+.hidden__block2{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.block2__elem{
+    height: fit-content;
+    
+}
+
+
+.block2__elem input[type=radio]{
+    display: none;
+}
+
+.block2__elem label{
+    background-color: rgb(177, 96, 96);
+    margin: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+
+.block2__elem input[type=radio]:checked + label{
+    background-color: rgb(233, 70, 70);
+}
+
+
+
+
+
+
+/* блок для режиссеров */
+
+.block2{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width:95%;
+    margin-left: 5%;
+}
+
+/* стили для режисеров */
+
+.direct-img{
+    width: 135px;
+    border-radius: 24px;
+    box-shadow: 2.5px 2.5px 13px 2.5px #000000d2;
+    transition: 0.2s all ease-in-out;
+    margin-right: 46px;
+    cursor: pointer;
+
+}
+
+.direct-img:hover + .direct__name{
+    transition: 0.2s all ease-in-out;
+    background-color: #9c3b3b;
+}
+
+.direct__name{
+    margin-top: 8px;
+    width: 130px;
+    border-radius: 8px;
+    background-color: #ffffff18;
+    margin-bottom: 33px;
+}
+
+.direct__name-elem{
+    padding-left: 6px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+}

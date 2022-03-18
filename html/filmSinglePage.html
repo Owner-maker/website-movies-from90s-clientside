@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleNeon.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="../css/pattern.css">
+    <link rel="stylesheet" href="../css/filmSingleStyle.css">
+    <link rel="stylesheet" href="../css/mediaFilmSingle.css">
+    <title>Film</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="logo">
+            <div class="sign">
+                <span class="sign-fast-flicker">Mov </span> ies<pre> </pre> <span class="sign-flicker">from </span><sup>90s</sup>
+            </div>
+        </div>
+            <div class="menu-search">
+                <nav class="menu">
+                    <input type="checkbox" name="toggle" id="menu" class="menu__toggle">
+                    <label for="menu" class="menu__toggle"><i class="fa fa-bars"></i>Меню</label>
+                    <ul class="menu__block1">
+                        <li class="menu__block1-elem"><a href="../html/index.html" class="menu__block1-link"><i class="fa fa-home"></i>Главная</a></li>
+                        <li class="menu__block1-elem">
+                            <input type="checkbox" name="toggle" class="menu__subtoggle" id="sub_m1">
+                            <a href=filmsPage.html class="menu__block1-link" id="f"><i class="fa fa-film"></i>Фильмы</a>
+                            <label for="sub_m1" class="menu__subtoggle"><i class="fa"></i></label>
+                            <ul class="menu__block2">
+                                <li class="menu__block2-elem"><a href="filmsPage.html#actionmovie" class="menu__block2-link">Боевики</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#drama" class="menu__block2-link">Драмы</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#comedy" class="menu__block2-link">Комедии</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#fantastics" class="menu__block2-link">Фантастика</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#thriller" class="menu__block2-link">Триллеры</a></li>
+                                <li class="menu__block2-elem"><a href="filmsPage.html#horror" class="menu__block2-link">Ужасы</a></li>
+                                <li class="menu__block2-elem"><a href="" class="menu__block2-link">Добавленные</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__block1-elem"><a href="selection.html" class="menu__block1-link"><i class="fa fa-cogs"></i>Подборка</a></li>
+                        <li class="menu__block1-elem"><a href="directors.html" class="menu__block1-link" id="d"><i class="fa fa-users"></i>Режиссеры</a></li>
+                    </ul>
+                </nav>
+                <form class="menu__search">
+                    <input type="text" class="menu__search-field" placeholder="Поиск" id="sField">
+                    <button type="submit" class="menu__search-submit" id="sButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+    </header>
+
+    <div class="mainBlock" id="main">
+
+    </div>
+    
+
+
+    <footer class="footer">
+        <div class="footer__block">
+            <div class="footer__block__elem1">
+                <p class="footer__block-text">Copyright</p>
+                <span class="footer__block-symbol">&#169;</span>
+                <p class="footer__block-text">2021</p>
+            </div>
+            <div class="footer__block__elem2">
+                <div>
+                    <a href="" target="_blank"><img src="../images/facebook.png" class="footer__block-img" alt="Facebook logo" title="My facebook"></a>
+                </div>
+                <div>
+                    <a href="" target="_blank"><img src="../images/twitter.png" class="footer__block-img" alt="Twitter logo" title="My twitter"></a>
+                </div>
+                <div>
+                    <a href="" target="_blank"><img src="../images/instagram.png" class="footer__block-img" alt="Instagram logo" title="My Instagram"></a>
+                </div>
+                <div>
+                    <a href="" target="_blank"><img src="../images/vk.png" class="footer__block-img" alt="VK logo" title="My VK"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="../JS/films.js"></script>
+    <script src="../JS/directors.js"></script>
+    <script src="../JS/menuFixed.js "></script>
+    <script src="../JS/searchInput.js"></script>
+    <script src="../JS/getColor.js"></script>
+    <script src="../JS/singleFilmePage.js"></script>
+    <script src="../JS/goSingleDirectPage.js"></script>
+</body>
+</html>

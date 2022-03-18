@@ -1,0 +1,214 @@
+.body{
+    align-items: center;    /* проблемная штука */
+}
+
+.mainBlock{
+    padding-bottom: 70px;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.082);
+    width: 765px;
+    position: relative;
+    margin-top: 50px;
+    flex-direction: column;
+    margin-bottom: 180px;
+
+}
+
+.block1{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 95%;
+    height: 60px;
+}
+
+.block1__title1,
+.block1__title2{
+    
+    color: rgb(253, 245, 234);
+    font-family: Cuprum, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.block1__title1{
+    font-size: 35px;
+}
+
+.block1__title2{
+    font-size: 25px;
+}
+
+/* основной блок с кнопкой для вопросов и самими вопросами */
+
+.block2{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 95%;
+    height: calc(100% + 500px);
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.block2__button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(102, 26, 51);
+    box-shadow: 3px 3px 16px 3px #702f2fa2;
+}
+
+.block2__button-title{
+    font-size: 30px;
+    font-family: Cuprum, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.block2__button:hover{
+    transition: 0.25s all ease-in-out;
+    box-shadow: 1px 1px 12px 1px #ffffff;
+}
+
+.hiddenQs{
+    z-index: 1;
+    display: none;
+    box-shadow: 4px 4px 16px 4px #000000;
+    width: fit-content;
+    background-color: rgba(90, 45, 45, 0.979);
+}
+
+.block2__button:hover > .hiddenQs{
+    display:block;
+    position:absolute;
+    
+}
+
+.hidden__form fieldset{
+    border: none;
+}
+
+.hidden__form__block1,
+.hidden__form__block2{
+    margin: 10px;
+    display: flex;
+    flex-direction: column; 
+    padding-bottom: 15px;   
+}
+
+.block3__subblock2{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden__form-q1{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.hidden__form-answer{
+    padding-left: 5px;
+    color: #ffffffd0;
+    font-size: 15px;
+}
+
+.block1__subblock2-answer,
+.block1__subblock2-answer{
+    display: flex;
+    margin-right: 18px;
+    align-items: center;
+}
+
+.block1__subblock2{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.block3{
+    margin-top: 8px;
+    display: flex;
+}
+
+.hidden__form-submit{
+    box-shadow: 2px 2px 13px 2px #f3f3f349;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 2px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.hidden__form-submit:hover{
+    color: #ffffff;
+    background-color: rgb(97, 37, 37);
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 14px 2px rgb(218, 86, 86);
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+.blockFilms{
+    
+    margin-top: 40px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+/* параметры маленьких картинок для фильмов */
+
+.block-1__field__img{
+    width: 125px;
+    height: 192px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px 13px 2.5px #000000d2;
+    transition: 0.2s all ease-in-out;
+}
+
+
+/* параметры для скрытого описания с данными фильма */
+
+.hidden{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 24, 24, 0.822);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hidden-img{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /* margin-bottom: 5px; */
+    margin-left: 5px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+.hidden-img:last-child{
+    margin-bottom: 15px;
+}
+
+/* .block-1__field__img:hover{
+    box-shadow: 3px 3px 16px 3px #702f2fa2;
+    transition: 0.5s all ease-in-out;
+} */
+
+.block-1__field__img:hover > .hidden{
+    display: flex; 
+}
+
+
+/* ------------------------------------------------------- */
+/* -------------------------------------------------------- */
