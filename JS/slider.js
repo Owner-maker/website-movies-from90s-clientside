@@ -9,14 +9,18 @@ let step = 0;
 let offset = 0;
 
 // нахождение ширины картинки
+
 // let rules = document.styleSheets[0].rules || document.styleSheets[0].cssRules;
-let rules = document.styleSheets[0].cssRules;
-for( let i=0; i<rules.length; i++){
-    let rule = rules[i];
-    if(rule.selectorText.toLowerCase()==".slide-single"){
-        var width = rule.style.getPropertyValue("width");
-    }
-}
+// let rules = document.styleSheets[0].cssRules;
+// for( let i=0; i<rules.length; i++){
+//     let rule = rules[i];
+//     if(rule.selectorText.toLowerCase()==".slide-single"){
+//         var width = rule.style.getPropertyValue("width");
+//     }
+// }
+
+
+let width = window.getComputedStyle(document.getElementById("slider")).width;
 
 width = parseInt(width.replace(/\D+/g,""));
 
